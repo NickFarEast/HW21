@@ -5,7 +5,7 @@ class Shop(Store):
     def __init__(self, limit=5):
         super().__init__()
         self.items = {}
-        self.capacity = 20
+        self.capacity = 30
         self._limit = limit
 
     @property

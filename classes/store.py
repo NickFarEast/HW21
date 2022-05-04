@@ -31,8 +31,12 @@ class Store(Storage):
                     self.items[key] = self.items[key] - count
                 else:
                     print(f"Слишком мало {name}")
+
         if not is_found:
             print(f"{name.title()} - нет на складе")
+
+        if self.items[name] == 0 and is_found:
+            del self.items[name]
 
     def get_item(self):
         return self.items

@@ -15,4 +15,4 @@ class Request:
         return str.split(" ")
 
     def __repr__(self):
-        return f" Доставить** {self.amount} {self.product} **из** {self.from_} **в** {self.to} "
+        return f"Доставить** {self.amount} {self.product} **из** {self.from_} **в** {self.to} "
